@@ -158,7 +158,3 @@ function SchoolQuizResult({
     </div>
   );
 }
-
-// Type helper so TS is happy with school param type above
-type SchoolT = (typeof schools)[number];
-function useSchool(): SchoolT { return schools[0]; }
