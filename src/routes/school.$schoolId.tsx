@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { schools, fieldLabels } from "@/data/schools";
+import { schools, fieldLabels, type Profession } from "@/data/schools";
 
 export const Route = createFileRoute("/school/$schoolId")({
   component: SchoolPage,
@@ -54,7 +54,7 @@ function SchoolPage() {
 
       <h2 className="text-2xl font-bold mt-12 mb-6">Professions you can study</h2>
       <div className="grid gap-4 md:grid-cols-2">
-        {school.professions.map((p) => (
+        {school.professions.map((p: Profession) => (
           <div key={p.id} className="rounded-xl border border-border p-5 bg-card hover:border-brand transition-colors">
             <p className="text-xs uppercase tracking-wider text-brand">{fieldLabels[p.field]}</p>
             <h3 className="text-lg font-semibold mt-1">{p.name}</h3>
