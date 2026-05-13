@@ -2,7 +2,6 @@ import http from "http";
 import path from "path";
 import { fileURLToPath } from "url";
 import fs from "fs";
-import glob from "glob";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
