@@ -1,16 +1,4 @@
 {
   "nodeVersion": "22.x",
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "functions": {
-    "dist/server/server.js": {
-      "maxDuration": 60
-    }
-  },
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/dist/server/server.js"
-    }
-  ]
+  "buildCommand": "npm run build"
 }
