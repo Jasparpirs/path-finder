@@ -1,44 +1,46 @@
-import { createStart } from "@tanstack/react-start";
+import { startInstance } from "../dist/server/assets/start-D4mdwD77.js";
+import { renderErrorPage } from "../src/lib/error-page.js";
 
-// Import the compiled server from build output
-import { startInstance } from "../dist/server/assets/server-*.js";
-
-// Vercel serverless function handler
 export default async function handler(request, response) {
   try {
-    // TanStack Start uses fetch-like adapter; Vercel passes Node req/res
-    // Create a standard Request object from the Node request
+    // Build a standard fetch Request from Node req
     const url = new URL(request.url, `http://${request.headers.host}`);
-    const body =
-      request.method !== "GET" && request.method !== "HEAD"
-        ? await new Promise((resolve, reject) => {
-            let data = "";
-            request.on("data", (chunk) => {
-              data += chunk;
-            });
-            request.on("end", () => resolve(data));
-            request.on("error", reject);
-          })
-        : undefined;
 
-    const fetchRequest = new Request(url, {
+    // Read body if present
+    let body = undefined;
+    if (request.method !== "GET" && request.method !== "HEAD") {
+      body = await new Promise((resolve, reject) => {
+        let data = "";
+        request.on("data", (chunk) => {
+          data += chunk;
+        });
+        request.on("end", () => resolve(data));
+        request.on("error", reject);
+      });
+    }
+
+    // Create fetch Request
+    const fetchRequest = new Request(url.toString(), {
       method: request.method,
-      headers: request.headers,
+      headers: new Headers(request.headers),
       body,
     });
 
-    // Call the TanStack start handler
+    // Get response from TanStack Start handler
     const fetchResponse = await startInstance.handler(fetchRequest);
 
-    // Copy response headers
+    // Copy status and headers
+    response.statusCode = fetchResponse.status;
     for (const [key, value] of fetchResponse.headers) {
       response.setHeader(key, value);
     }
 
-    response.status(fetchResponse.status);
-    response.send(await fetchResponse.text());
+    // Send response body
+    response.end(await fetchResponse.text());
   } catch (error) {
-    console.error("Handler error:", error);
-    response.status(500).json({ error: error.message });
+    console.error("API handler error:", error);
+    response.statusCode = 500;
+    response.setHeader("content-type", "text/html; charset=utf-8");
+    response.end(renderErrorPage());
   }
 }
