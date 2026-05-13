@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { schools, fieldLabels, typeLabels, type Profession, type Field } from "@/data/schools";
+import { schools, fieldLabels, typeLabels, type Profession, type Field, type School } from "@/data/schools";
 import { useState } from "react";
 import { QuizRunner } from "@/components/QuizRunner";
 
@@ -25,15 +25,14 @@ export const Route = createFileRoute("/school/$schoolId")({
 });
 
 function SchoolPage() {
-  const { school } = Route.useLoaderData();
+  const { school } = Route.useLoaderData() as { school: School };
   const [showQuiz, setShowQuiz] = useState(false);
 
-  // Group professions by field
-  const byField: Record<string, Profession[]> = {};
+  const byField: Partial<Record<Field, Profession[]>> = {};
   school.professions.forEach((p) => {
     (byField[p.field] ??= []).push(p);
   });
-  const schoolFields = Array.from(new Set(school.professions.map((p) => p.field)));
+  const schoolFields: Field[] = Array.from(new Set(school.professions.map((p) => p.field)));
 
   return (
     <div className="mx-auto max-w-5xl px-6 py-12">
@@ -93,7 +92,7 @@ function SchoolPage() {
           <div key={f}>
             <h3 className="text-sm uppercase tracking-wider text-brand mb-3">{fieldLabels[f]}</h3>
             <div className="grid gap-4 md:grid-cols-2">
-              {byField[f].map((p) => (
+              {byField[f]!.map((p) => (
                 <div key={p.id} className="rounded-xl border border-border p-5 bg-card hover:border-brand transition-colors">
                   <h4 className="text-lg font-semibold">{p.name}</h4>
                   <p className="text-sm text-muted-foreground mt-2">{p.description}</p>
@@ -112,7 +111,7 @@ function SchoolQuizResult({
   school,
 }: {
   ranked: [Field, number][];
-  school: ReturnType<typeof useSchool>;
+  school: School;
 }) {
   const topField = ranked[0]?.[0];
   const matches = topField ? school.professions.filter((p) => p.field === topField) : [];
