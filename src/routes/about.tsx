@@ -15,11 +15,13 @@ function AboutPage() {
     <div className="mx-auto max-w-3xl px-6 py-16">
       <h1 className="text-4xl font-bold">Meist</h1>
       <p className="mt-4 text-lg text-muted-foreground">
-        Pärast 9. klassi peab Eesti õpilane valima — <strong>gümnaasium</strong> (akadeemiline keskharidus), <strong>kutsekool</strong> (otse erialale) või hiljem <strong>ülikool</strong> / rakenduskõrgkool.
+        See on leht, mis aitab sul valida sinu eriala ja tuleviku kooli.
       </p>
       <p className="mt-4">
-        ÕpiEesti koondab kõik suuremad Eesti riiklikud ja era-koolid, ametid, mida nad õpetavad, ning karjääritesti, mis aitab leida suuna. Test hindab sinu huvisid 12 valdkonna alusel ja näitab konkreetsed sobivad programmid.
+        Pärast 9. klassi peab Eesti õpilane valima — <strong>gümnaasium</strong> (akadeemiline keskharidus), <strong>kutsekool</strong> (otse erialale) või hiljem <strong>ülikool</strong> / rakenduskõrgkool.
+        ÕpiEesti koondab kõik suuremad Eesti koolid, ametid, mida nad õpetavad, ning karjääritesti, mis aitab leida suuna.
       </p>
+
       <h2 className="text-2xl font-bold mt-10">Kuidas test töötab</h2>
       <ul className="mt-3 list-disc pl-6 space-y-1 text-muted-foreground">
         <li>12 valikvastustega küsimust hobide, ainete ja eesmärkide kohta</li>
@@ -27,9 +29,18 @@ function AboutPage() {
         <li>Kõrgeima skooriga valdkond määrab, milliseid erialasid sulle soovitatakse</li>
         <li>Kooli lehel saab teha sama testi ainult selle kooli erialade põhjal — vajuta "Aita mul valida"</li>
       </ul>
+
       <Link to="/quiz" className="mt-8 inline-flex rounded-md bg-brand text-brand-foreground px-5 py-3 font-semibold">
         Tee karjääritest →
       </Link>
+
+      <div className="mt-16 rounded-2xl border border-border bg-card p-6">
+        <p className="text-xs uppercase tracking-[0.2em] text-brand">Autor</p>
+        <h2 className="text-2xl font-bold mt-2">Jaspar Pirs</h2>
+        <p className="mt-2 text-muted-foreground">
+          Veebileht on tehtud <strong className="text-foreground">Jaspar Pirsi</strong> poolt, kes on õpilane <strong className="text-foreground">IT24</strong> rühmas <strong className="text-foreground">Haapsalu Kutsehariduskeskuses</strong>.
+        </p>
+      </div>
     </div>
   );
 }
