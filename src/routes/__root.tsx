@@ -54,6 +54,7 @@ function Footer() {
 function RootLayout() {
   return (
     <div className="min-h-screen flex flex-col">
+      <LevelGate />
       <Header />
       <main className="flex-1">
         <Outlet />
