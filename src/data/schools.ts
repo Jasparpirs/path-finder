@@ -304,9 +304,12 @@ export const schools: School[] = [
     website: "https://lennuakadeemia.ee",
     description: "Lennundusala kõrgkool — piloodid, mehaanikud, lennujuhid.",
     professions: [
-      { id: "la-pilot", name: "Õhusõiduki juht (piloot)", field: "transport", description: "Lennukite ja kopterite juhtimine." },
+      { id: "la-pilot", name: "Õhusõiduki juht (piloot)", field: "transport", description: "Liinipiloodi ettevalmistus." },
       { id: "la-atc", name: "Lennuliiklusteenindus", field: "transport", description: "Lennujuhi amet." },
-      { id: "la-mech", name: "Õhusõidukite hooldus", field: "tech", description: "Lennukite tehnik." },
+      { id: "la-mech", name: "Õhusõidukite hooldus (tehnik B1)", field: "tech", description: "Lennuki tehniline hooldus." },
+      { id: "la-eng", name: "Lennundustehnika (insener)", field: "tech", description: "Õhusõidukite süsteemide arendus." },
+      { id: "la-ops", name: "Lennuettevõtte korraldus", field: "transport", description: "Lennujaama- ja lennuettevõtte juhtimine." },
+      { id: "la-info", name: "Side- ja infosüsteemid lennunduses", field: "tech", description: "Lennundusside ja navigatsioon." },
     ],
   },
   {
