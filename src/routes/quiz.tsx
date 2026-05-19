@@ -7,7 +7,7 @@ export const Route = createFileRoute("/quiz")({
   head: () => ({
     meta: [
       { title: "Karjääritest — mida õppida Eestis?" },
-      { name: "description", content: "Vasta 12 küsimusele ja leiame sulle sobivad Eesti koolid ja erialad." },
+      { name: "description", content: "Vasta 15 küsimusele ja leiame sulle sobivad Eesti koolid ja erialad." },
     ],
   }),
 });
@@ -17,7 +17,7 @@ function QuizPage() {
     <div className="mx-auto max-w-2xl px-6 py-12">
       <p className="text-sm text-brand uppercase tracking-wider">Karjääritest</p>
       <h1 className="text-4xl font-bold mt-2 mb-2">Mida sa võiksid õppida?</h1>
-      <p className="text-muted-foreground mb-10">12 lühikest küsimust. Tulemus on individualiseeritud Eesti koolide ja erialade järgi.</p>
+      <p className="text-muted-foreground mb-10">15 lühikest küsimust. Tulemus on individualiseeritud Eesti koolide ja erialade järgi.</p>
 
       <QuizRunner renderResult={(ranked) => <GlobalResult ranked={ranked} />} />
     </div>
