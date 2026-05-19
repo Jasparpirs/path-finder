@@ -409,10 +409,13 @@ export const schools: School[] = [
     website: "https://taltech.ee/mereakadeemia",
     description: "Mere- ja laevandusealane kõrgkool, mis valmistab ette merenduse spetsialiste.",
     professions: [
-      { id: "mar-nav", name: "Laeva juhtimine", field: "transport", description: "Navigatsioon ja laevajuhtimine." },
+      { id: "mar-nav", name: "Laeva juhtimine (kapten)", field: "transport", description: "Navigatsioon ja laevajuhtimine." },
       { id: "mar-eng", name: "Laevamehaanika", field: "tech", description: "Laevade jõuseadmete ja süsteemide hooldus." },
+      { id: "mar-elec", name: "Laeva elektriinsener", field: "tech", description: "Laeva elektri- ja automaatikasüsteemid." },
       { id: "mar-port", name: "Sadamateenused ja logistikajuhtimine", field: "transport", description: "Kaubavood, sadamatöö ja logistika." },
       { id: "mar-safety", name: "Mereside ja ohutus", field: "security", description: "Meresõidu ohutus ja sidepidamine." },
+      { id: "mar-vts", name: "Veeteeohutuse korraldus (VTS)", field: "security", description: "Laevaliikluse juhtimine sadama lähistel." },
+      { id: "mar-water", name: "Veeteede haldus", field: "transport", description: "Sadamate ja veeteede majandamine." },
     ],
   },
   {
