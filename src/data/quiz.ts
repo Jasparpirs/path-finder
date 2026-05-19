@@ -159,7 +159,7 @@ export const questions: QuizQuestion[] = [
       { label: "Kasvanud ettevõte või müük", weights: { business: 3 } },
       { label: "Õnnelik laps või õpilane", weights: { education: 3 } },
       { label: "Päästetud inimene või lahendatud juhtum", weights: { security: 3 } },
-      { id: "kohale-jõudnud-kaup", label: "Kohale jõudnud kaup või reisija", weights: { transport: 3 } },
+      { label: "Kohale jõudnud kaup või reisija", weights: { transport: 3 } },
       { label: "Korjatud saak või terve loom", weights: { agri: 3 } },
     ],
   },
