@@ -344,10 +344,16 @@ export const schools: School[] = [
     website: "https://sisekaitse.ee",
     description: "Politsei, päästja, piirivalvur, vanglaametnik, maksuamet.",
     professions: [
-      { id: "sk-pol", name: "Politseiametnik", field: "security", description: "Patrulli- ja kriminaalpolitsei töö." },
+      { id: "sk-pol", name: "Politseiametnik", field: "security", description: "Patrull- ja korrakaitse." },
+      { id: "sk-crim", name: "Kriminaalpolitsei uurija", field: "security", description: "Kuritegevuse uurimine." },
+      { id: "sk-cyber", name: "Küberkuritegevuse uurija", field: "security", description: "IT-rünnakute uurimine." },
       { id: "sk-rescue", name: "Päästja", field: "security", description: "Tulekahjud, õnnetused, päästetööd." },
+      { id: "sk-fire", name: "Päästekorralduse spetsialist", field: "security", description: "Häirekeskuse töö ja koordineerimine." },
       { id: "sk-border", name: "Piirivalvur", field: "security", description: "Piiri turvalisus ja kontroll." },
-      { id: "sk-cust", name: "Maksu- ja tolliametnik", field: "security", description: "Maksunduse ja piiril toimuva järelevalve." },
+      { id: "sk-cust", name: "Maksu- ja tolliametnik", field: "security", description: "Maksunduse ja tolli järelevalve." },
+      { id: "sk-prison", name: "Vanglaametnik (korrektsioon)", field: "security", description: "Vangla- ja kriminaalhooldus." },
+      { id: "sk-adm", name: "Sisejulgeoleku korraldus", field: "security", description: "Sisekaitse magistriõpe." },
+      { id: "sk-emer", name: "Päästekorralduse juhtimine", field: "security", description: "Kriiside ja katastroofide juhtimine." },
     ],
   },
   {
