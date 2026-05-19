@@ -33,14 +33,6 @@ function AboutPage() {
       <Link to="/quiz" className="mt-8 inline-flex rounded-md bg-brand text-brand-foreground px-5 py-3 font-semibold">
         Tee karjääritest →
       </Link>
-
-      <div className="mt-16 rounded-2xl border border-border bg-card p-6">
-        <p className="text-xs uppercase tracking-[0.2em] text-brand">Autor</p>
-        <h2 className="text-2xl font-bold mt-2">Jaspar Pirs</h2>
-        <p className="mt-2 text-muted-foreground">
-          Veebileht on tehtud <strong className="text-foreground">Jaspar Pirsi</strong> poolt, kes on õpilane <strong className="text-foreground">IT24</strong> rühmas <strong className="text-foreground">Haapsalu Kutsehariduskeskuses</strong>.
-        </p>
-      </div>
     </div>
   );
 }

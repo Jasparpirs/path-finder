@@ -1,12 +1,13 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { schools, fieldLabels, typeLabels, type Profession, type Field, type School } from "@/data/schools";
+import { fieldLabels, typeLabels, type Profession, type Field, type School } from "@/data/schools";
 import { useState } from "react";
 import { QuizRunner } from "@/components/QuizRunner";
+import { getSchoolById } from "@/lib/schools-repository";
 
 export const Route = createFileRoute("/school/$schoolId")({
   component: SchoolPage,
   loader: ({ params }) => {
-    const school = schools.find((s) => s.id === params.schoolId);
+    const school = getSchoolById(params.schoolId);
     if (!school) throw notFound();
     return { school };
   },

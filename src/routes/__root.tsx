@@ -1,6 +1,6 @@
 import { Link, Outlet } from "@tanstack/react-router";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { createRootRouteWithContext, HeadContent, Scripts } from "@tanstack/react-router";
+import { createRootRouteWithContext, HeadContent } from "@tanstack/react-router";
 import appCss from "../styles.css?url";
 import { LevelGate } from "@/components/LevelGate";
 import { useLevel, levelLabel } from "@/lib/level";
@@ -43,9 +43,7 @@ function Footer() {
     <footer className="border-t border-border/60 mt-20">
       <div className="mx-auto max-w-6xl px-6 py-8 text-sm text-muted-foreground flex flex-wrap gap-4 justify-between">
         <p>© ÕpiEesti — leia oma haridustee Eestis.</p>
-        <p>
-          Veebileht on tehtud <strong className="text-foreground">Jaspar Pirsi</strong> poolt — õpilane IT24, Haapsalu Kutsehariduskeskus.
-        </p>
+        <p>Koondab Eesti koolid, programmid ja karjääritesti ühte kohta.</p>
       </div>
     </footer>
   );
@@ -74,7 +72,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     links: [{ rel: "stylesheet", href: appCss }],
   }),
-  shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: () => (
     <div className="min-h-screen flex items-center justify-center">
@@ -87,19 +84,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 });
 
 function RootShell({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="et">
-      <head><HeadContent /></head>
-      <body>{children}<Scripts /></body>
-    </html>
-  );
+  return <>{children}</>;
 }
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
   return (
     <QueryClientProvider client={queryClient}>
-      <RootLayout />
+      <>
+        <HeadContent />
+        <RootLayout />
+      </>
     </QueryClientProvider>
   );
 }

@@ -1,0 +1,65 @@
+﻿id,name,city,category,website,description,acceptsAfter9
+taltech,Tallinna Tehnikaülikool (TalTech),Tallinn,ulikool,https://taltech.ee,"Eesti ainus tehnikaülikool — inseneeria, IT, majandus ja loodusteadused.",False
+ut,Tartu Ülikool,Tartu,ulikool,https://ut.ee,"Eesti rahvusülikool — meditsiin, õigus, loodus- ja humanitaarteadused.",False
+emu,Eesti Maaülikool,Tartu,ulikool,https://emu.ee,"Loodusteaduste ülikool — põllumajandus, metsandus, veterinaaria.",False
+eka,Eesti Kunstiakadeemia,Tallinn,ulikool,https://artun.ee,"Kunsti, disaini ja arhitektuuri ülikool.",False
+ema,Eesti Muusika- ja Teatriakadeemia,Tallinn,ulikool,https://eamt.ee,"Muusika, teatri ja kultuurikorralduse kõrgkool.",False
+tlu,Tallinna Ülikool,Tallinn,ulikool,https://tlu.ee,"Humanitaaria, haridus, digimeedia ja sotsiaalteadused.",False
+ttk,Tallinna Tehnikakõrgkool (TTK),Tallinn,rakenduskorkkool,https://tktk.ee,"Praktiline insenerikool — tehnika, logistika, disain.",False
+lcc,Eesti Lennuakadeemia,Tartu,rakenduskorkkool,https://lennuakadeemia.ee,"Lennundusala kõrgkool — piloodid, mehaanikud, lennujuhid.",False
+smk,Tervishoiu Kõrgkool,Tallinn,rakenduskorkkool,https://ttk.ee/et,"Tallinna Tervishoiu Kõrgkool — õed, ämmaemandad, terapeudid.",False
+sks,Sisekaitseakadeemia,Tallinn / Paikuse,rakenduskorkkool,https://sisekaitse.ee,"Politsei, päästja, piirivalvur, vanglaametnik, maksuamet.",False
+eek,Eesti Ettevõtluskõrgkool Mainor,Tallinn / Tartu,rakenduskorkkool,https://eek.ee,"Erakõrgkool ettevõtluse, turunduse ja IT alal.",False
+ut-parnu,Tartu Ülikooli Pärnu kolledž,Pärnu,rakenduskorkkool,https://parnu.ut.ee,"Pärnu kolledž ühendab ettevõtluse, teenused, turismi ja sotsiaalvaldkonna õppe.",False
+ut-narva,Tartu Ülikooli Narva kolledž,Narva,rakenduskorkkool,https://narva.ut.ee,Õpetaja- ja sotsiaalvaldkonna õpe Ida-Virumaal.,False
+maritime,TalTech Eesti Mereakadeemia,Tallinn,rakenduskorkkool,https://taltech.ee/mereakadeemia,"Mere- ja laevandusealane kõrgkool, mis valmistab ette merenduse spetsialiste.",False
+tartu-health,Tartu Tervishoiu Kõrgkool,Tartu,rakenduskorkkool,https://noor.tartu.ee,Tervishoiu rakenduskõrgharidus Tartus.,False
+tthk,Tallinna Tööstushariduskeskus,Tallinn,kutsekool,https://tthk.ee,"Üks Eesti suurimaid kutsekoole — IT, ehitus, autotehnika, toitlustus.",True
+tkhk,Tartu Rakenduslik Kolledž (VOCO),Tartu,kutsekool,https://voco.ee,Suur kutsekool Tartus — laia valikuga erialad pärast 9. klassi.,True
+ptk,Pärnumaa Kutsehariduskeskus,Pärnu,kutsekool,https://hariduskeskus.ee,"Pärnu kutsekool — turism, IT, käsitöö.",True
+vkhk,Võrumaa Haridus- ja Tehnoloogiakeskus,Võru,kutsekool,https://vkhk.ee,"Tuntud puidutöö, IT ja disaini poolest.",True
+ivkhk,Ida-Virumaa Kutsehariduskeskus,Jõhvi / Narva / Sillamäe,kutsekool,https://ivkhk.ee,Suurim kutsekool Ida-Virumaal.,True
+kpk,Kuressaare Ametikool,Kuressaare,kutsekool,https://ametikool.ee,"Saaremaa kutsekool — laevaehitus, IT, toitlustus.",True
+rkhk,Rakvere Ametikool,Rakvere,kutsekool,https://rak.ee,"Lääne-Virumaa kutsekool — IT, turism, käsitöö.",True
+vamk,Valgamaa Kutseõppekeskus,Valga,kutsekool,https://vkok.ee,"Lõuna-Eesti kutsekool — autotehnika, ehitus, toitlustus.",True
+haapsalu,Haapsalu Kutsehariduskeskus,Haapsalu,kutsekool,https://hkhk.edu.ee,Lääne-Eesti kutsekool.,True
+olustvere,Olustvere Teenindus- ja Maamajanduskool,Olustvere,kutsekool,https://olustvere.edu.ee,"Maamajandus, käsitöö, mahetoit.",True
+luua,Luua Metsanduskool,Luua,kutsekool,https://luua.ee,Eesti ainus metsandusele spetsialiseerunud kutsekool.,True
+rmk,Räpina Aianduskool,Räpina,kutsekool,https://aianduskool.ee,"Aianduse, maastikuehituse ja keskkonna kutsekool.",True
+lmk,Tallinna Lasnamäe Mehaanikakool,Tallinn,kutsekool,https://lmk.edu.ee,Tehnika- ja mehhaanikapõhise õppega kutsekool Tallinnas.,True
+jkhk,Järvamaa Kutsehariduskeskus,Paide / Särevere,kutsekool,https://jkhk.ee,"Järvamaa suur kutsekool põllumajanduse, tehnika ja teeninduse õppijatele.",True
+viko,Viljandi Kutseõppekeskus,Viljandi,kutsekool,https://viko.ee,"Viljandi kutsekool tehnika, teeninduse ja ehituse erialadega.",True
+kehtna,Kehtna Kutsehariduskeskus,Kehtna,kutsekool,https://kehtna.edu.ee,Rohkete maaelu ja tehnika erialadega kutsekeskus.,True
+tartu-art,Tartu Kunstikool,Tartu,kutsekool,https://tartukunstikool.ee,Loov- ja visuaalerialade kutsekool Tartus.,True
+pehk,Põltsamaa Ametikool,Põltsamaa,kutsekool,https://pa.ee,"Kesk-Eesti kutsekool ehituse, teeninduse ja tehnikaga.",True
+tpt,Tallinna Polütehnikum,Tallinn,kutsekool,https://tptlive.ee,Eesti suurim IT- ja tehnikaerialade kutsekool.,True
+kopli,Tallinna Kopli Ametikool,Tallinn,kutsekool,https://kopli.edu.ee,"Tallinna keskne ehitus-, mere- ja tehnikaerialade kutsekool.",True
+teen,Tallinna Teeninduskool,Tallinn,kutsekool,https://teeninduskool.ee,"Iluteenuste, toitlustuse ja turismierialade kutsekool.",True
+narva-koek,Narva Kutseõppekeskus,Narva,kutsekool,https://nvtc.ee,Suur Ida-Eesti kutsekool venekeelse õppega.,True
+hiiumaa,Hiiumaa Ametikool,Suuremõisa,kutsekool,https://hak.edu.ee,"Saare kutsekool tehnika, teeninduse ja loodusainetega.",True
+vigala,Vana-Vigala Tehnika- ja Teeninduskool,Vana-Vigala,kutsekool,https://vigalattk.ee,"Maaelu, tehnika ja teeninduse kutsekool.",True
+elleri,Heino Elleri Muusikakool,Tartu,kutsekool,https://elleri.ee,Eesti suurim muusikakeskkool — õpe pärast 9. klassi.,True
+ots,Georg Otsa nimeline Tallinna Muusikakool,Tallinn,kutsekool,https://otsakool.edu.ee,Klassikalise ja rütmimuusika kutsekeskkool Tallinnas.,True
+pallas,Pallase Kunstikool (Tartu),Tartu,rakenduskorkkool,https://pallasart.ee,Rakenduslik kõrgkool kunsti- ja disainierialadega.,False
+astangu,Astangu Kutserehabilitatsiooni Keskus,Tallinn,kutsekool,https://astangu.ee,Erivajadustega õppijate kutseõpe ja rehabilitatsioon.,True
+saaremaa-mu,Saaremaa Muusikakool (kutsekeskaste),Kuressaare,kutsekool,https://muusikakool.ee,Muusikaõpe pärast 9. klassi.,True
+reaal,Tallinna Reaalkool,Tallinn,gymnaasium,https://real.edu.ee,Üks Eesti tugevamaid reaalkallakuga gümnaasiume.,True
+ga,Gustav Adolfi Gümnaasium,Tallinn,gymnaasium,https://gag.ee,"Vanim Eesti gümnaasium, lai õppesuundade valik.",True
+21k,Tallinna 21. Kool,Tallinn,gymnaasium,https://21k.ee,Tugev humanitaar- ja keelteõppega gümnaasium.,True
+tfg,Tallinna Inglise Kolledž,Tallinn,gymnaasium,https://tik.edu.ee,Inglise keele süvaõppe ja IB-programmiga kool.,True
+fr,Tallinna Prantsuse Lütseum,Tallinn,gymnaasium,https://tpl.edu.ee,Prantsuse keele ja kultuuri süvaõpe.,True
+rocca,Rocca al Mare Kool,Tallinn,gymnaasium,https://ramkool.ee,Erakool laia akadeemilise programmiga.,True
+treffner,Hugo Treffneri Gümnaasium,Tartu,gymnaasium,https://htg.tartu.ee,"Üks parimaid Eesti gümnaasiume, tugev reaal- ja loodussuund.",True
+tmg,Miina Härma Gümnaasium,Tartu,gymnaasium,https://mhg.tartu.ee,IB-programm ja keelesuunad.,True
+tjk,Tartu Jaan Poska Gümnaasium,Tartu,gymnaasium,https://jpg.tartu.ee,Mitmekülgne riigigümnaasium Tartus.,True
+njp,Nõo Reaalgümnaasium,Nõo,gymnaasium,https://nrg.ee,Reaalainete süvaõppega kool.,True
+kuressaare,Saaremaa Ühisgümnaasium,Kuressaare,gymnaasium,https://syg.edu.ee,Saaremaa juhtiv gümnaasium.,True
+viljandi-g,Viljandi Gümnaasium,Viljandi,gymnaasium,https://viljandigymnaasium.ee,Riigigümnaasium laia õppesuundade valikuga.,True
+parnu-g,Pärnu Sütevaka Humanitaargümnaasium,Pärnu,gymnaasium,https://sytevaka.ee,Tugeva humanitaarsuunaga erakool.,True
+narva-g,Narva Soldino Gümnaasium,Narva,gymnaasium,https://soldino.edu.ee,Suurim Narva gümnaasium.,True
+rakvere-g,Rakvere Riigigümnaasium,Rakvere,gymnaasium,https://rrg.edu.ee,Lääne-Viru moodne riigigümnaasium.,True
+haapsalu-g,Läänemaa Ühisgümnaasium,Haapsalu,gymnaasium,https://lyg.edu.ee,Haapsalu riigigümnaasium.,True
+kohtla-g,Jõhvi Gümnaasium,Jõhvi,gymnaasium,https://johvig.edu.ee,Ida-Viru riigigümnaasium.,True
+voru-g,Võru Gümnaasium,Võru,gymnaasium,https://vorugymnaasium.ee,Lõuna-Eesti riigigümnaasium.,True
+paide-g,Paide Gümnaasium,Paide,gymnaasium,https://paidegymnaasium.ee,Järvamaa riigigümnaasium.,True
+valga-g,Valga Gümnaasium,Valga,gymnaasium,https://valgagymnaasium.ee,Lõuna-Eesti riigigümnaasium.,True

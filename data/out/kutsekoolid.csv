@@ -1,0 +1,29 @@
+﻿id,name,city,category,website,description,acceptsAfter9
+tthk,Tallinna Tööstushariduskeskus,Tallinn,kutsekool,https://tthk.ee,"Üks Eesti suurimaid kutsekoole — IT, ehitus, autotehnika, toitlustus.",True
+tkhk,Tartu Rakenduslik Kolledž (VOCO),Tartu,kutsekool,https://voco.ee,Suur kutsekool Tartus — laia valikuga erialad pärast 9. klassi.,True
+ptk,Pärnumaa Kutsehariduskeskus,Pärnu,kutsekool,https://hariduskeskus.ee,"Pärnu kutsekool — turism, IT, käsitöö.",True
+vkhk,Võrumaa Haridus- ja Tehnoloogiakeskus,Võru,kutsekool,https://vkhk.ee,"Tuntud puidutöö, IT ja disaini poolest.",True
+ivkhk,Ida-Virumaa Kutsehariduskeskus,Jõhvi / Narva / Sillamäe,kutsekool,https://ivkhk.ee,Suurim kutsekool Ida-Virumaal.,True
+kpk,Kuressaare Ametikool,Kuressaare,kutsekool,https://ametikool.ee,"Saaremaa kutsekool — laevaehitus, IT, toitlustus.",True
+rkhk,Rakvere Ametikool,Rakvere,kutsekool,https://rak.ee,"Lääne-Virumaa kutsekool — IT, turism, käsitöö.",True
+vamk,Valgamaa Kutseõppekeskus,Valga,kutsekool,https://vkok.ee,"Lõuna-Eesti kutsekool — autotehnika, ehitus, toitlustus.",True
+haapsalu,Haapsalu Kutsehariduskeskus,Haapsalu,kutsekool,https://hkhk.edu.ee,Lääne-Eesti kutsekool.,True
+olustvere,Olustvere Teenindus- ja Maamajanduskool,Olustvere,kutsekool,https://olustvere.edu.ee,"Maamajandus, käsitöö, mahetoit.",True
+luua,Luua Metsanduskool,Luua,kutsekool,https://luua.ee,Eesti ainus metsandusele spetsialiseerunud kutsekool.,True
+rmk,Räpina Aianduskool,Räpina,kutsekool,https://aianduskool.ee,"Aianduse, maastikuehituse ja keskkonna kutsekool.",True
+lmk,Tallinna Lasnamäe Mehaanikakool,Tallinn,kutsekool,https://lmk.edu.ee,Tehnika- ja mehhaanikapõhise õppega kutsekool Tallinnas.,True
+jkhk,Järvamaa Kutsehariduskeskus,Paide / Särevere,kutsekool,https://jkhk.ee,"Järvamaa suur kutsekool põllumajanduse, tehnika ja teeninduse õppijatele.",True
+viko,Viljandi Kutseõppekeskus,Viljandi,kutsekool,https://viko.ee,"Viljandi kutsekool tehnika, teeninduse ja ehituse erialadega.",True
+kehtna,Kehtna Kutsehariduskeskus,Kehtna,kutsekool,https://kehtna.edu.ee,Rohkete maaelu ja tehnika erialadega kutsekeskus.,True
+tartu-art,Tartu Kunstikool,Tartu,kutsekool,https://tartukunstikool.ee,Loov- ja visuaalerialade kutsekool Tartus.,True
+pehk,Põltsamaa Ametikool,Põltsamaa,kutsekool,https://pa.ee,"Kesk-Eesti kutsekool ehituse, teeninduse ja tehnikaga.",True
+tpt,Tallinna Polütehnikum,Tallinn,kutsekool,https://tptlive.ee,Eesti suurim IT- ja tehnikaerialade kutsekool.,True
+kopli,Tallinna Kopli Ametikool,Tallinn,kutsekool,https://kopli.edu.ee,"Tallinna keskne ehitus-, mere- ja tehnikaerialade kutsekool.",True
+teen,Tallinna Teeninduskool,Tallinn,kutsekool,https://teeninduskool.ee,"Iluteenuste, toitlustuse ja turismierialade kutsekool.",True
+narva-koek,Narva Kutseõppekeskus,Narva,kutsekool,https://nvtc.ee,Suur Ida-Eesti kutsekool venekeelse õppega.,True
+hiiumaa,Hiiumaa Ametikool,Suuremõisa,kutsekool,https://hak.edu.ee,"Saare kutsekool tehnika, teeninduse ja loodusainetega.",True
+vigala,Vana-Vigala Tehnika- ja Teeninduskool,Vana-Vigala,kutsekool,https://vigalattk.ee,"Maaelu, tehnika ja teeninduse kutsekool.",True
+elleri,Heino Elleri Muusikakool,Tartu,kutsekool,https://elleri.ee,Eesti suurim muusikakeskkool — õpe pärast 9. klassi.,True
+ots,Georg Otsa nimeline Tallinna Muusikakool,Tallinn,kutsekool,https://otsakool.edu.ee,Klassikalise ja rütmimuusika kutsekeskkool Tallinnas.,True
+astangu,Astangu Kutserehabilitatsiooni Keskus,Tallinn,kutsekool,https://astangu.ee,Erivajadustega õppijate kutseõpe ja rehabilitatsioon.,True
+saaremaa-mu,Saaremaa Muusikakool (kutsekeskaste),Kuressaare,kutsekool,https://muusikakool.ee,Muusikaõpe pärast 9. klassi.,True

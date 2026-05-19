@@ -1,0 +1,17 @@
+﻿id,name,city,category,website,description,acceptsAfter9
+taltech,Tallinna Tehnikaülikool (TalTech),Tallinn,ulikool,https://taltech.ee,"Eesti ainus tehnikaülikool — inseneeria, IT, majandus ja loodusteadused.",False
+ut,Tartu Ülikool,Tartu,ulikool,https://ut.ee,"Eesti rahvusülikool — meditsiin, õigus, loodus- ja humanitaarteadused.",False
+emu,Eesti Maaülikool,Tartu,ulikool,https://emu.ee,"Loodusteaduste ülikool — põllumajandus, metsandus, veterinaaria.",False
+eka,Eesti Kunstiakadeemia,Tallinn,ulikool,https://artun.ee,"Kunsti, disaini ja arhitektuuri ülikool.",False
+ema,Eesti Muusika- ja Teatriakadeemia,Tallinn,ulikool,https://eamt.ee,"Muusika, teatri ja kultuurikorralduse kõrgkool.",False
+tlu,Tallinna Ülikool,Tallinn,ulikool,https://tlu.ee,"Humanitaaria, haridus, digimeedia ja sotsiaalteadused.",False
+ttk,Tallinna Tehnikakõrgkool (TTK),Tallinn,rakenduskorkkool,https://tktk.ee,"Praktiline insenerikool — tehnika, logistika, disain.",False
+lcc,Eesti Lennuakadeemia,Tartu,rakenduskorkkool,https://lennuakadeemia.ee,"Lennundusala kõrgkool — piloodid, mehaanikud, lennujuhid.",False
+smk,Tervishoiu Kõrgkool,Tallinn,rakenduskorkkool,https://ttk.ee/et,"Tallinna Tervishoiu Kõrgkool — õed, ämmaemandad, terapeudid.",False
+sks,Sisekaitseakadeemia,Tallinn / Paikuse,rakenduskorkkool,https://sisekaitse.ee,"Politsei, päästja, piirivalvur, vanglaametnik, maksuamet.",False
+eek,Eesti Ettevõtluskõrgkool Mainor,Tallinn / Tartu,rakenduskorkkool,https://eek.ee,"Erakõrgkool ettevõtluse, turunduse ja IT alal.",False
+ut-parnu,Tartu Ülikooli Pärnu kolledž,Pärnu,rakenduskorkkool,https://parnu.ut.ee,"Pärnu kolledž ühendab ettevõtluse, teenused, turismi ja sotsiaalvaldkonna õppe.",False
+ut-narva,Tartu Ülikooli Narva kolledž,Narva,rakenduskorkkool,https://narva.ut.ee,Õpetaja- ja sotsiaalvaldkonna õpe Ida-Virumaal.,False
+maritime,TalTech Eesti Mereakadeemia,Tallinn,rakenduskorkkool,https://taltech.ee/mereakadeemia,"Mere- ja laevandusealane kõrgkool, mis valmistab ette merenduse spetsialiste.",False
+tartu-health,Tartu Tervishoiu Kõrgkool,Tartu,rakenduskorkkool,https://noor.tartu.ee,Tervishoiu rakenduskõrgharidus Tartus.,False
+pallas,Pallase Kunstikool (Tartu),Tartu,rakenduskorkkool,https://pallasart.ee,Rakenduslik kõrgkool kunsti- ja disainierialadega.,False

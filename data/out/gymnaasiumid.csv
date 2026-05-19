@@ -1,0 +1,21 @@
+﻿id,name,city,category,website,description,acceptsAfter9
+reaal,Tallinna Reaalkool,Tallinn,gymnaasium,https://real.edu.ee,Üks Eesti tugevamaid reaalkallakuga gümnaasiume.,True
+ga,Gustav Adolfi Gümnaasium,Tallinn,gymnaasium,https://gag.ee,"Vanim Eesti gümnaasium, lai õppesuundade valik.",True
+21k,Tallinna 21. Kool,Tallinn,gymnaasium,https://21k.ee,Tugev humanitaar- ja keelteõppega gümnaasium.,True
+tfg,Tallinna Inglise Kolledž,Tallinn,gymnaasium,https://tik.edu.ee,Inglise keele süvaõppe ja IB-programmiga kool.,True
+fr,Tallinna Prantsuse Lütseum,Tallinn,gymnaasium,https://tpl.edu.ee,Prantsuse keele ja kultuuri süvaõpe.,True
+rocca,Rocca al Mare Kool,Tallinn,gymnaasium,https://ramkool.ee,Erakool laia akadeemilise programmiga.,True
+treffner,Hugo Treffneri Gümnaasium,Tartu,gymnaasium,https://htg.tartu.ee,"Üks parimaid Eesti gümnaasiume, tugev reaal- ja loodussuund.",True
+tmg,Miina Härma Gümnaasium,Tartu,gymnaasium,https://mhg.tartu.ee,IB-programm ja keelesuunad.,True
+tjk,Tartu Jaan Poska Gümnaasium,Tartu,gymnaasium,https://jpg.tartu.ee,Mitmekülgne riigigümnaasium Tartus.,True
+njp,Nõo Reaalgümnaasium,Nõo,gymnaasium,https://nrg.ee,Reaalainete süvaõppega kool.,True
+kuressaare,Saaremaa Ühisgümnaasium,Kuressaare,gymnaasium,https://syg.edu.ee,Saaremaa juhtiv gümnaasium.,True
+viljandi-g,Viljandi Gümnaasium,Viljandi,gymnaasium,https://viljandigymnaasium.ee,Riigigümnaasium laia õppesuundade valikuga.,True
+parnu-g,Pärnu Sütevaka Humanitaargümnaasium,Pärnu,gymnaasium,https://sytevaka.ee,Tugeva humanitaarsuunaga erakool.,True
+narva-g,Narva Soldino Gümnaasium,Narva,gymnaasium,https://soldino.edu.ee,Suurim Narva gümnaasium.,True
+rakvere-g,Rakvere Riigigümnaasium,Rakvere,gymnaasium,https://rrg.edu.ee,Lääne-Viru moodne riigigümnaasium.,True
+haapsalu-g,Läänemaa Ühisgümnaasium,Haapsalu,gymnaasium,https://lyg.edu.ee,Haapsalu riigigümnaasium.,True
+kohtla-g,Jõhvi Gümnaasium,Jõhvi,gymnaasium,https://johvig.edu.ee,Ida-Viru riigigümnaasium.,True
+voru-g,Võru Gümnaasium,Võru,gymnaasium,https://vorugymnaasium.ee,Lõuna-Eesti riigigümnaasium.,True
+paide-g,Paide Gümnaasium,Paide,gymnaasium,https://paidegymnaasium.ee,Järvamaa riigigümnaasium.,True
+valga-g,Valga Gümnaasium,Valga,gymnaasium,https://valgagymnaasium.ee,Lõuna-Eesti riigigümnaasium.,True

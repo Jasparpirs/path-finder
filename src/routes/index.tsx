@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { schools, typeLabels } from "@/data/schools";
-import { gymnasiums } from "@/data/gymnasiums";
+import { typeLabels } from "@/data/schools";
 import { useLevel } from "@/lib/level";
+import { getGymnasiums, getSchools } from "@/lib/schools-repository";
 import { useState } from "react";
 
 export const Route = createFileRoute("/")({
@@ -20,6 +20,8 @@ function HomePage() {
   const [level, setLevel] = useLevel();
   const [filter, setFilter] = useState<Filter>("all");
   const [q, setQ] = useState("");
+  const schools = getSchools();
+  const gymnasiums = getGymnasiums();
 
   // Schools shown depend on level: after9 → vocational; higher → university+applied.
   const baseSchools = !level
@@ -51,20 +53,20 @@ function HomePage() {
       : [["all", "Kõik"], ["university", "Ülikoolid"], ["applied", "Rakenduskõrgkoolid"], ["vocational", "Kutsekoolid"]];
 
   return (
-    <div>
-      <section className="relative overflow-hidden">
+    <main aria-label="Avaleht">
+      <section className="relative overflow-hidden" aria-labelledby="home-hero-title">
         <div className="absolute inset-0 -z-10 opacity-90" style={{ background: "var(--gradient-hero)" }} />
         <div className="mx-auto max-w-6xl px-6 py-24 text-brand-foreground">
           <p className="uppercase tracking-[0.2em] text-xs opacity-80 mb-4">Eesti · sinu haridustee</p>
-          <h1 className="text-5xl md:text-6xl font-bold leading-tight max-w-3xl">
-            {heroTitle} <span className="opacity-80">— ja eriala, mis sulle sobib.</span>
+          <h1 id="home-hero-title" className="text-5xl md:text-6xl font-bold leading-tight max-w-3xl">
+            {heroTitle}
           </h1>
           <p className="mt-6 max-w-2xl text-lg opacity-90">
             {level === "after9"
-              ? "Kõik Eesti kutsekoolid ja gümnaasiumid, kuhu saad pärast 9. klassi õppima minna, ning lühike test, mis ütleb, mida õppida."
+              ? "Kõik Eesti kutsekoolid ja gümnaasiumid, kuhu saad pärast 9. klassi õppima minna, ning test, mis aitab suunda valida."
               : level === "higher"
-                ? "Kõik Eesti ülikoolid ja rakenduskõrgkoolid, nende erialad ning karjääritest, mis aitab valida õige suuna."
-                : "Kõik Eesti koolid ja ametid ühes kohas. Tee karjääritest ja leia, mis sulle sobib."}
+                ? "Kõik Eesti ülikoolid ja rakenduskõrgkoolid, nende erialad ning test, mis aitab valida õige suuna."
+                : "Kõik Eesti koolid ja erialad ühes kohas. Tee karjääritest ja leia sobiv suund."}
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link to="/quiz" className="inline-flex items-center rounded-md bg-background text-foreground px-5 py-3 font-semibold shadow-[var(--shadow-card)] hover:translate-y-[-1px] transition-transform">
@@ -84,9 +86,9 @@ function HomePage() {
         </div>
       </section>
 
-      <section id="schools" className="mx-auto max-w-6xl px-6 py-12">
+      <section id="schools" className="mx-auto max-w-6xl px-6 py-12" aria-labelledby="schools-list-title">
         <div className="flex flex-wrap gap-3 items-center justify-between mb-8">
-          <h2 className="text-3xl font-bold">
+          <h2 id="schools-list-title" className="text-3xl font-bold">
             {level === "after9" ? "Kutsekoolid" : level === "higher" ? "Kõrgkoolid" : "Eesti koolid"}
           </h2>
           <div className="flex items-center gap-3">
@@ -122,20 +124,23 @@ function HomePage() {
               to="/school/$schoolId"
               params={{ schoolId: s.id }}
               className="group block rounded-xl border border-border p-6 bg-card hover:shadow-[var(--shadow-card)] hover:border-brand transition-all"
+              aria-label={`Ava kool: ${s.name}`}
             >
-              <div className="flex items-start justify-between gap-3">
-                <div>
-                  <p className="text-xs uppercase tracking-wider text-muted-foreground">{s.city}</p>
-                  <h3 className="text-xl font-semibold mt-1 group-hover:text-brand transition-colors">{s.name}</h3>
+              <article>
+                <div className="flex items-start justify-between gap-3">
+                  <div>
+                    <p className="text-xs uppercase tracking-wider text-muted-foreground">{s.city}</p>
+                    <h3 className="text-xl font-semibold mt-1 group-hover:text-brand transition-colors">{s.name}</h3>
+                  </div>
+                  {s.acceptsAfter9 && (
+                    <span className="text-xs bg-accent-2/30 text-foreground px-2 py-1 rounded-full whitespace-nowrap">Pärast 9. kl</span>
+                  )}
                 </div>
-                {s.acceptsAfter9 && (
-                  <span className="text-xs bg-accent-2/30 text-foreground px-2 py-1 rounded-full whitespace-nowrap">Pärast 9. kl</span>
-                )}
-              </div>
-              <p className="text-sm text-muted-foreground mt-3">{s.description}</p>
-              <p className="text-xs mt-4 text-foreground/70">
-                {s.professions.length} eriala · {typeLabels[s.type]}
-              </p>
+                <p className="text-sm text-muted-foreground mt-3">{s.description}</p>
+                <p className="text-xs mt-4 text-foreground/70">
+                  {s.professions.length} eriala · {typeLabels[s.type]}
+                </p>
+              </article>
             </Link>
           ))}
           {filtered.length === 0 && (
@@ -146,11 +151,11 @@ function HomePage() {
         {level === "after9" && filteredGyms.length > 0 && (
           <div className="mt-16">
             <div className="flex items-end justify-between mb-2">
-              <h2 className="text-3xl font-bold">Gümnaasiumid</h2>
+              <h2 id="gymnasiums-title" className="text-3xl font-bold">Gümnaasiumid</h2>
               <p className="text-sm text-muted-foreground">{filteredGyms.length} kooli</p>
             </div>
             <p className="text-muted-foreground mb-6">Kui soovid akadeemilist keskharidust enne ülikooli — siit valikust leiad Eesti tugevamad gümnaasiumid.</p>
-            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3" aria-labelledby="gymnasiums-title">
               {filteredGyms.map((g) => (
                 <a
                   key={g.id}
@@ -159,10 +164,12 @@ function HomePage() {
                   rel="noreferrer"
                   className="block rounded-xl border border-border p-5 bg-card hover:border-brand hover:shadow-[var(--shadow-card)] transition-all"
                 >
-                  <p className="text-xs uppercase tracking-wider text-muted-foreground">{g.city}</p>
-                  <h3 className="text-base font-semibold mt-1">{g.name}</h3>
-                  <p className="text-sm text-muted-foreground mt-2">{g.description}</p>
-                  <p className="text-xs text-brand mt-3">Koduleht ↗</p>
+                  <article>
+                    <p className="text-xs uppercase tracking-wider text-muted-foreground">{g.city}</p>
+                    <h3 className="text-base font-semibold mt-1">{g.name}</h3>
+                    <p className="text-sm text-muted-foreground mt-2">{g.description}</p>
+                    <p className="text-xs text-brand mt-3">Koduleht ↗</p>
+                  </article>
                 </a>
               ))}
             </div>
@@ -177,6 +184,6 @@ function HomePage() {
           </div>
         )}
       </section>
-    </div>
+    </main>
   );
 }
