@@ -66,7 +66,7 @@ function SchoolPage() {
           <div>
             <h2 className="text-xl font-bold">Ei tea, milline eriala valida?</h2>
             <p className="text-sm text-muted-foreground mt-1">
-              Vasta {12} küsimusele ja leiame just selle kooli erialade hulgast sulle parima.
+              Vasta {15} küsimusele ja leiame just selle kooli erialade hulgast sulle parima.
             </p>
           </div>
           <button
